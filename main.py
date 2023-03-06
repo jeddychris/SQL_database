@@ -9,6 +9,7 @@ class Student(Model):
     stud_name = CharField()
     stud_email = CharField()
     stud_password = CharField()
+    
     class Meta:
         database = db
 
@@ -19,19 +20,18 @@ class Product(Model):
     prod_price = CharField()
     prod_quantity = CharField()
     prod_description = CharField()
-    prod_color = CharField
     class Meta:
         database = db
 
 Product.create_table(fail_silently=True)
 
-class User(Model):
-    users_name = CharField()
-    users_phone = CharField
-    users_email = CharField()
-    users_password = CharField()
+class Teacher(Model):
+    teach_name = CharField()
+    teach_phone = CharField
+    teach_email = CharField()
+    teach_password = CharField()
     class Meta:
         database = db
 
-User.create_table(fail_silently=True)
+Teacher.create_table(fail_silently=True)
 
